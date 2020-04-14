@@ -172,6 +172,7 @@ header {
   border-bottom: 2px dashed #C0C0C0;
 }
 header .container {
+  padding: 2% 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -251,4 +252,20 @@ header .container nav a:hover {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .content-pick .destination .buttonContainer .btn {
+  display: block;
+  background-color: #17A2B8;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
 }

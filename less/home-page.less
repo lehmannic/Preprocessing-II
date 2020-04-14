@@ -58,6 +58,24 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
-  }
+
+      .buttonContainer {
+        .displayFlex();
+
+        .btn{
+
+          // used this codepen for button styling https://codepen.io/Lehmannic/pen/GRppBEq?editors=1100
+
+          display: block;
+          background-color: @button-bg; // changed to correct variable 
+          margin: 0 10px 20px;
+          cursor: pointer;
+          width: 200px;
+          height: 45px;
+          font-size: 2rem;
+          border-radius: 10px;
+        } // closes btn
+      } // closes buttonContainer
+    } // closes destination
+  } // closes content-pick
 }// home
