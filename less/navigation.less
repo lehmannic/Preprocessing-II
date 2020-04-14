@@ -7,10 +7,18 @@ header{
         padding: 2% 0; 
         .displayFlex();
 
+        @media @mobile {
+            .displayFlex(column, space-between, center); 
+
+        } // closes container media mobile
+
         nav{
             width: 50%; 
+            .displayFlex(); // flex the nav children (links) 
 
-            .displayFlex();
+            @media @mobile{
+                width: 100%
+            }
 
             a{
                 font-size: 1.5rem; 

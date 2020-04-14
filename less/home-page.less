@@ -2,6 +2,12 @@
 
   .about{
     padding-top: 2%;
+    border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile{
+      padding: 2%; 
+    }
+
   }
 
   .content-section {
@@ -10,17 +16,34 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      .displayFlex(column);
+      align-items: center;
+
+      margin: 15px;
+    } // closes content-section media mobile
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width: 90%; 
+      }
     }
 
     .img-content {
       width: 48%;
-      padding-left: 1%;
+      // padding-left: 1%;
+      @media @mobile{
+        width: 90%; 
+      }
 
       img {
         border-radius: 10px;
+        @media @mobile{
+          width: 100%; 
+        }
       }
     }
   }
@@ -28,6 +51,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile{
+      flex-direction: column-reverse; 
+    }
 
     .text-content {
       padding-left: 1%;
@@ -44,8 +71,16 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile{
+      width: 95%;
+      padding: 2%; 
+    }
+
     img {
       border-radius: 10px;
+      @media @mobile{
+        width: 95%; 
+      }
     }
   }
 
@@ -54,10 +89,21 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+    @media @mobile{ 
+      flex-direction: column;
+      align-items: center; // moves columns to center of container
+    } // closes content-pick media mobile
+
+    
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile{
+        width: 75%; 
+      } // closes .destination media mobile
 
       .buttonContainer {
         .displayFlex();
@@ -70,7 +116,7 @@
           background-color: @button-bg; // changed to correct variable 
           margin: 0 10px 20px;
           cursor: pointer;
-          width: 200px;
+          width: 90%;
           height: 45px;
           font-size: 2rem;
           border-radius: 10px;
