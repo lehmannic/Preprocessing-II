@@ -100,26 +100,33 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      // .testBorder(); 
+
+
+      .displayFlex();
+      flex-wrap: wrap; 
+
 
       @media @mobile{
         width: 75%; 
       } // closes .destination media mobile
 
       .buttonContainer {
-        .displayFlex();
+        width: 100%; 
 
         .btn{
-
           // used this codepen for button styling https://codepen.io/Lehmannic/pen/GRppBEq?editors=1100
 
-          display: block;
-          background-color: @button-bg; // changed to correct variable 
-          margin: 0 10px 20px;
-          cursor: pointer;
-          width: 90%;
-          height: 45px;
-          font-size: 2rem;
-          border-radius: 10px;
+          // background-color: @button-bg; // changed to correct variable 
+          // cursor: pointer;
+          // width: 90%;
+          // height: 45px;
+          // font-size: 2rem;
+          // border-radius: 10px;
+
+          .btnStyle(); // added ^^^ to mixins.less as parametric with background-color and cursor as parameters
+
+
         } // closes btn
       } // closes buttonContainer
     } // closes destination

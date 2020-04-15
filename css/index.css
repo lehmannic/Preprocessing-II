@@ -316,6 +316,11 @@ header .container nav a:hover {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 550px) {
   .home .content-pick .destination {
@@ -323,15 +328,10 @@ header .container nav a:hover {
   }
 }
 .home .content-pick .destination .buttonContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
 }
 .home .content-pick .destination .buttonContainer .btn {
-  display: block;
   background-color: #17A2B8;
-  margin: 0 10px 20px;
   cursor: pointer;
   width: 90%;
   height: 45px;
