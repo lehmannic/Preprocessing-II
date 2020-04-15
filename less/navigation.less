@@ -1,1 +1,34 @@
 // Navigation Styles here
+
+header{
+    border-bottom: 2px dashed @navigation-border;
+
+    .container{
+        padding: 2% 0; 
+        .displayFlex();
+
+        @media @mobile {
+            .displayFlex(column, space-between, center); 
+
+        } // closes container media mobile
+
+        nav{
+            width: 50%; 
+            .displayFlex(); // flex the nav children (links) 
+
+            @media @mobile{
+                width: 100%
+            }
+
+            a{
+                font-size: 1.5rem; 
+                color: @font-color;
+                text-decoration: none;
+
+                &:hover{
+                    color: lighten(@font-color, 50%);
+                } // closes &:hover
+            } // closes a
+        } // closes nav
+    } // closes .container
+} // closes header
